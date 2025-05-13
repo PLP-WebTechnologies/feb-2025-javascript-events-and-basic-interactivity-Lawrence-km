@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Event Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Event Playground</h1>
+    </header>
+
+    <main>
+        <!-- Button Interactions Section -->
+        <section class="interaction-section">
+            <h2>Button Magic</h2>
+            <button id="color-changer" class="interactive-btn">Change My Color</button>
+            <button id="text-toggler" class="interactive-btn">Toggle Text</button>
+            <p id="toggle-text">Watch me disappear and reappear!</p>
+        </section>
+
+        <!-- Image Gallery -->
+        <section class="interaction-section">
+            <h2>Image Gallery</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300x200?text=Image+1" alt="Gallery image 1" class="gallery-img active">
+                <img src="https://via.placeholder.com/300x200?text=Image+2" alt="Gallery image 2" class="gallery-img">
+                <img src="https://via.placeholder.com/300x200?text=Image+3" alt="Gallery image 3" class="gallery-img">
+            </div>
+            <div class="gallery-controls">
+                <button id="prev-btn" class="gallery-btn">Previous</button>
+                <button id="next-btn" class="gallery-btn">Next</button>
+            </div>
+        </section>
+
+        <!-- Secret Interaction -->
+        <section class="interaction-section">
+            <h2>Find the Secret</h2>
+            <div id="secret-box" class="secret-box">
+                <p>Double-click me for a surprise!</p>
+            </div>
+        </section>
+
+        <!-- Form Validation -->
+        <section class="interaction-section">
+            <h2>Form Validation</h2>
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="username">Username (required)</label>
+                    <input type="text" id="username" required>
+                    <span class="error-message" id="username-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (min 8 chars)</label>
+                    <input type="password" id="password">
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>JavaScript Event Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
